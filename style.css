@@ -1,0 +1,348 @@
+:root{
+    /* ### Primary */
+
+--Tomato: hsl(4, 100%, 67%);
+--orange: #ff6200;
+
+    /* ### Neutral */
+
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display&family=Big+Shoulders+Text&family=Koulen&family=Lexend+Deca&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Quicksand&family=Raleway:wght@400;700&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0 0;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    background-color: hsl(234, 29%, 20%);
+    
+}
+.container{
+   
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.container1{
+    
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 32px;
+    gap: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.container1 h1{
+    font-size: 3rem;
+}
+.container1 p{
+    font-size: 12px;
+    padding-right: 3px;
+}
+.container1 ul{
+    font-size: 12px;
+    display: inline-block;
+}
+.container1 li{
+    list-style: none;
+    padding: 4px;
+     
+    
+}
+.container1 li img{
+    width: 4.5%;
+    align-self:auto;
+    
+}
+.container1 li span{
+   padding-left: 6px ;
+
+}
+.field-container{
+      
+    width: 100%;
+    padding: 16px 0;
+    
+}
+.field-container label{
+    font-size: 12px;
+    font-weight: bolder;
+}
+.error-text{
+    display: none;
+}
+
+.field-group.error .error-text{
+    display: block;
+}
+.field-group.error input{
+    border: 1px solid hsl(354, 100%, 66%);
+}
+.labelerror{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.error-text{
+    font-size: 11px;
+    font-weight: 500;
+    color: hsl(354, 100%, 66%);
+    text-align: end;
+    padding: 3px 0.8px;
+    
+    
+}
+.field-container input{
+    width: 100%;
+    padding: 8px 16px ;
+    border-radius: 5px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.field-group input:focus{
+    border: 1px solid hsl(249, 10%, 26%,0.5);
+    outline: none;
+
+}
+.field-group input::placeholder{
+    color: hsl(249, 10%, 26%, 0.6);
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.btn{
+    width: 100%;
+    padding: 11px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+}
+.btn:hover{
+    background: linear-gradient(to right,#ff6257,#ff6200);
+    cursor: pointer;
+    transition: ease-in-out 0.2ms;
+
+}
+
+.container2{
+    /* border: 1px solid red; */
+    width: 50%;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    margin: 16px;
+ 
+}
+.img2{
+    display: none;
+}
+.wrapper{
+    /* border: 1px solid rgb(8, 6, 6); */
+    width: 100%;
+    object-fit: cover;
+    
+}
+.wrapper .img1{
+    width: 100%;
+}
+        /* ----------Thanks web page work------ */
+.hide{
+    display: none;
+}
+
+.container3{
+    width: 45%;
+    padding: 26px;
+    border-radius: 15px;
+    background-color: white;
+    color: hsl(234, 29%, 20%);
+    margin: auto;
+    font-family: 'Roboto';
+    
+}
+.hidden{
+    display: none;
+}
+
+.thank{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    place-content: left;
+    text-align: left;
+    margin: 16px;
+}
+.thank_title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: hsl(234, 29%, 20%);
+    margin: 8px 0;
+    
+}
+.thank_title h1{
+    font-size: 48px;
+    font-weight: 800;
+    padding: 8px;
+    text-align: left;
+}
+.thank_title p{
+    font-size: 12px;
+   
+    padding: 8px 0px;
+    line-height: 20px;
+    text-align: left;
+    
+}
+.thank_title span{
+    font-weight: 700;
+}
+.attribution 
+{ 
+    font-size: 10px; 
+    text-align: center; 
+    margin: auto;
+    position: relative;
+    bottom: -55px;
+    color: var(--VeryDarkGrayishBlue);
+    font-family:Poppins;
+    font-weight: 400;
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width:425px){
+
+    body{
+        width: 100vw;
+        height: fit-content;
+    
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        place-content: center;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container1 h1{
+        width: 100%;
+        font-size: 40px;
+        margin-bottom: 16px;
+        text-align: center;
+    
+    } 
+    .container1 p{
+        font-size: 12px;
+        padding: 4px;
+    }
+    
+    .container2{
+         width: 100%;
+         margin: 0;
+    }
+    .img2{
+       display: block;
+    }
+    .img1{
+        display: none;
+    }
+
+    .wrapper{
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    
+    }
+    .wrapper .img2{
+    width: 100%;
+    }
+    .field-container label{
+        padding: 3px;
+    }
+    .field-group{
+    width: 100%
+    }
+
+    .btn{
+    width: 100%;
+    }
+
+    .attribution 
+{   display: none;
+    font-size: 10px; 
+    text-align: center; 
+    margin: auto;
+    position: relative;
+    bottom: 0px;
+    color: var(--VeryDarkGrayishBlue);
+    font-family:Poppins;
+    font-weight: 400;
+}
+        /* ----------Thanks web page work------ */
+        .hide{
+            display: none;
+        }
+        
+        .container3{
+            width: 100%;
+            height: 100vh;
+            padding: 26px;
+            border-radius: 15px;
+            background-color: white;
+            color: hsl(234, 29%, 20%);
+            margin: auto;
+            font-family: 'Roboto';
+            display: flex;
+            flex-direction: column;
+            justify-items: left;
+            place-content: center; 
+            
+        }
+        .thankyou{
+            display: flex;
+            align-self: center;
+            justify-items: left;
+            align-items: left;
+
+        }
+        #dismiss{
+            margin-top: 160px;
+        }
+        .hidden{
+            display: none;
+        }
+        
+}
